@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "scrap-scraper-requester"
+version = "0.1.0"
+description = "Scrap Scrap Requester"
+authors = ["guimassoqueto <gui.massoqueto@gmail.com>"]
+readme = "README.md"
+packages = [
+{include = "scrap-scraper-requester"},
+{include = "app/**/*.py"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pika = "^1.3.2"
+python-dotenv = "^1.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
